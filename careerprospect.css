@@ -1,0 +1,285 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/lamna-the-shark-ZXYK4LljnT0-unsplash\ 2.0.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation Bar */
+
+header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 0px -5px;
+   background: transparent;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 99;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    transition: 0.5 ease;
+    border-radius: 25px;
+}
+
+ul li a i {
+    margin-right: 20px;
+}
+
+ul li a:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.logo img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 0px;
+}
+
+.main {
+    max-width: 1700px;
+    margin: auto;
+    left: -100px;
+}
+
+/* Drop Down List */
+
+.side-note {
+    display: none;
+    top: 4%;
+    position: relative;
+    min-width: 250px;
+    color: #fff;
+}
+
+.side-note ul {
+    position: absolute;
+    display: block;
+}
+
+.side-note ul li {
+    padding: 10px;
+}
+
+
+.main ul li:hover .side-note {
+    display: block;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .side-note ul {
+    display: block;
+    margin: 6px;
+}
+
+.main ul li:hover .side-note ul li {
+    min-width: 200px;
+    display: block;
+    min-height: 10px;
+    border-bottom: 1px #fff;
+    background: rgb(0, 0, 0);
+    transition: 0.2 ease;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+main h2 {
+    color: #fff;
+    font-size: 15px;
+    padding-top: 120px;
+    padding-left: 50px;
+    line-height: 1.5;
+}
+
+main h3 {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 50px;
+}
+
+main p {
+    color: #fff;
+    font-size: 15px;
+    padding-left: 80px;
+    padding-right: 50px;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #fff;
+    padding-top: 70px;
+    padding-left: 50px;
+    text-decoration: underline;
+}
+
+main ul li {
+    color: #fff;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 0 20px;
+    list-style-type: disc;
+    line-height: 1.6;
+}
+
+/* Career */
+
+.container {
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .heading {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    padding-top: 100px;
+}
+
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+}
+
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #e0ecf9c9;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.container .box-container .box img {
+    height: 120px;
+}
+
+
+.container .box-container .box h3 {
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.container .box-container .box p {
+    color: #525252;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container .box-container .box:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+/* Job Roles */
+
+.wrap {
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.wrap .job-heading {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+    padding-top: 100px;
+}
+
+.wrap .job-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrap .job-wrap .job {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #5d3875ad;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.wrap .job-wrap .job img {
+    height: 120px;
+}
+
+.wrap .job-wrap .job h3 {
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.wrap .job-wrap .job:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    background-color: black;
+}
+
+footer p {
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .wrap {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
