@@ -1,0 +1,261 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-image: url(images/lamna-the-shark-ZXYK4LljnT0-unsplash\ 2.0.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    height: 130vh;
+    text-align: center;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    transition: 0.5 ease;
+    border-radius: 25px;
+}
+
+ul li a i {
+    margin-right: 20px;
+}
+
+ul li a:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.logo img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 0px;
+}
+
+.main {
+    max-width: 1700px;
+    margin: auto;
+}
+
+.side-note {
+    display: none;
+    top: 4%;
+    position: relative;
+    min-width: 250px;
+    color: #fff;
+}
+
+.side-note ul {
+    position: absolute;
+    display: block;
+}
+
+.side-note ul li {
+    padding: 10px;
+}
+
+
+.main ul li:hover .side-note {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .side-note ul {
+    display: block;
+    margin: 6px;
+}
+
+.main ul li:hover .side-note ul li {
+    min-width: 200px;
+    display: block;
+    min-height: 10px;
+    border-bottom: 1px #fff;
+    background: rgb(0, 0, 0);
+    transition: 0.2 ease;
+    text-align: left;
+    border-radius: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-top: -400px;
+    margin-bottom: 25px;
+    position: relative;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 85px;
+    padding-top: 0 auto;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #007eb5;
+}
+
+.heading p {
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    left: 30px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    width: 600px;
+    margin: auto;
+}
+
+.about-image img {
+    width: 100%;
+    height: 90%;
+    display: block;
+    transition: 0.5% ease;
+    position: relative;
+    margin-top: -50px;
+}
+
+.about-image:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    margin-top: 60px;
+    color: #fff;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.about-content .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #3e73e4;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 50px;
+    transition: 0.3s ease;
+}
+
+.about-content .read-more:hover {
+    background-color: #0f51e0;
+}
+
+/* mission and vision */
+
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    background-color: black;
+}
+
+footer p {
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        padding: 0px 20px;
+    }
+    .heading h1 {
+        font-size: 36px;
+    }
+    .heading p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .about {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p {
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more {
+        font-size: 16px;
+    }
+
+   footer {
+            padding: 20px;
+        }
+}
